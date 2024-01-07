@@ -1,6 +1,6 @@
 import PyPDF2
 from pdf2image import convert_from_path
-from pyzbar.pyzbar import decode
+from pyzbar.pyzbar import decode, BarcodeFormat
 from PIL import Image
 from passbook.models import EventTicket, Barcode
 
@@ -27,7 +27,7 @@ ticket.addSecondaryField('location', 'Event Location')
 ticket.addAuxiliaryField('date', 'Event Date')
 ticket.addBackField('qr-data', qr_data)
 
-barcode = Barcode(message = qr_data, format = BarcodeFormat.QR)
+barcode = Barcode(message=qr_data, format=BarcodeFormat.QR)
 ticket.barcode = barcode
 
 # Write the pass to a file
