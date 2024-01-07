@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "version 1"
+version = "0.1.0"
+description = "quick side project to convert pdfs to apple wallet format"
+authors = ["Alastair Grant <85125580+aldo-g@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyzbar = "^0.1.9"
+
+[tool.poetry.dev-dependencies]
+PyPDF2 = "^3.0.1"
+pdf2image = "^1.16.0"
+Passbook = "^1.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
