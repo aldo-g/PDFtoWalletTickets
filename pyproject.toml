@@ -1,9 +1,8 @@
 [tool.poetry]
-name = "version 1"
+name = "PDFtoWalletTickets"
 version = "0.1.0"
 description = "quick side project to convert pdfs to apple wallet format"
 authors = ["Alastair Grant <85125580+aldo-g@users.noreply.github.com>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
