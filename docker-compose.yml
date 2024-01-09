@@ -1,0 +1,18 @@
+version: '3'
+services:
+  passmaker:
+    build: ./PassMaker
+    ports:
+      - "8080:80"
+    volumes:
+      - shared-data:/app/shared
+
+  qrcodeextractor:
+    build: ./QRCodeExtractor
+    ports:
+      - "8081:80"
+    volumes:
+      - shared-data:/app/shared
+
+volumes:
+  shared-data:
