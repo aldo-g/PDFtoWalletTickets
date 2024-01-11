@@ -9,7 +9,7 @@
     },
     "dependencies": {
       "express": "^4.17.1",
-      "passkit-generator": "^1.7.1"
+      "passkit-generator": "^1.0.4"
     },
     "devDependencies": {
       "mocha": "^8.2.1"
