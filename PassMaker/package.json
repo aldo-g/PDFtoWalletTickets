@@ -1,0 +1,17 @@
+{
+    "name": "passmaker",
+    "version": "1.0.0",
+    "description": "A sample Node.js project",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "test": "mocha"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "passkit-generator": "^1.7.1"
+    },
+    "devDependencies": {
+      "mocha": "^8.2.1"
+    }
+  }

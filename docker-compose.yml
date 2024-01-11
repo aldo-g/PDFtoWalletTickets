@@ -6,6 +6,7 @@ services:
       - "8080:80"
     volumes:
       - shared-data:/app/shared
+    command: tail -f /dev/null
 
   qrcodeextractor:
     build: ./QRCodeExtractor
@@ -13,6 +14,7 @@ services:
       - "8081:80"
     volumes:
       - shared-data:/app/shared
+    command: tail -f /dev/null
 
 volumes:
   shared-data:
