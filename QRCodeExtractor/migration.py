@@ -1,7 +1,7 @@
 import shutil
 import os
 
-source_dir = '/app/QRCodeExtractor/qr_codes'
+source_dir = '/app/qr_codes'
 target_dir = '/app/shared'
 
 file_names = os.listdir(source_dir)

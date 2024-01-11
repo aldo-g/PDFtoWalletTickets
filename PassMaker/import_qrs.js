@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const sourceDir = '/app/shared';
-const targetDir = '/app/PassMaker/qr_codes';
+const targetDir = '/app/qr_codes';
 
 // Read the contents of the source directory
 fs.readdir(sourceDir, (err, files) => {
@@ -16,10 +16,16 @@ fs.readdir(sourceDir, (err, files) => {
         const sourceFile = path.join(sourceDir, file);
         const targetFile = path.join(targetDir, file);
 
-        // Move the file
-        fs.rename(sourceFile, targetFile, (err) => {
+        // Copy the file
+        fs.copyFile(sourceFile, targetFile, (err) => {
             if (err) throw err;
-            console.log(`Moved ${file} to ${targetDir}`);
+            console.log(`Copied ${file} to ${targetDir}`);
+
+            // Delete the original file
+            fs.unlink(sourceFile, (err) => {
+                if (err) throw err;
+                console.log(`Deleted original ${file}`);
+            });
         });
     });
 });
