@@ -1,60 +1,27 @@
 const fs = require('fs');
-const { Pass } = require('passkit-generator');
+const crypto = require('crypto');
+const child_process = require('child_process');
+const archiver = require('archiver');
 
-// Read the QR data from the file
-const qrData = fs.readFileSync('./qr_codes/qr_data.txt', 'utf8');
-console.log('QR Data:', qrData); // Log the QR data
-console.log('Model directory:', fs.existsSync('./myPassModel'));
-console.log('Certificates.p12 file:', fs.existsSync('./certificates/Certificates.p12'));
-console.log('key.pem file:', fs.existsSync('./certificates/key.pem'));
-console.log('wwdr.pem file:', fs.existsSync('./certificates/wwdr.pem'));
-console.log('Serial number:', 'A1B2C3D4E5');
-console.log('Description:', 'Description of the pass');
+// Read the pass.json file
+const passJson = fs.readFileSync('./pass.pkpass/pass.json', 'utf8');
 
-// Create a new pass
-let pass = new Pass({
-    model: './myPassModel', // Updated path to the pass model
-    certificate: './certificates/Certificates.p12',
-    key: './certificates/key.pem',
-    wwdr: './certificates/wwdr.pem',
+// Generate the manifest.json file
+const manifest = {};
+fs.readdirSync('./pass.pkpass').forEach(file => {
+  const filePath = `./pass.pkpass/${file}`;
+  const fileBuffer = fs.readFileSync(filePath);
+  const hash = crypto.createHash('sha1').update(fileBuffer).digest('hex');
+  manifest[file] = hash;
 });
+fs.writeFileSync('./pass.pkpass/manifest.json', JSON.stringify(manifest));
 
-console.log('Pass created:', pass); // Log the created pass
+// Sign the manifest.json file
+child_process.execSync('openssl smime -binary -sign -certfile certificates/wwdr.pem -signer certificates/certificate.pem -inkey certificates/key.pem -in ./pass.pkpass/manifest.json -out ./pass.pkpass/signature -outform DER -passin pass:Hello123');
 
-// // Add fields to the pass
-// pass.primaryFields.add({
-//     key: 'event',
-//     label: 'Event',
-//     value: 'Event Name', // Update this value if necessary
-// });
-// pass.secondaryFields.add({
-//     key: 'location',
-//     label: 'Location',
-//     value: 'Event Location', // Update this value if necessary
-// });
-// pass.auxiliaryFields.add({
-//     key: 'date',
-//     label: 'Date',
-//     value: 'Event Date', // Update this value if necessary
-// });
-
-// console.log('Fields added to pass:', pass); // Log the pass after adding fields
-
-// Add a barcode to the pass
-pass.barcodes.add({
-    message: qrData, // Use the QR data as the message
-    format: 'PKBarcodeFormatQR',
-    messageEncoding: 'iso-8859-1',
-});
-
-console.log('Barcode added to pass:', pass); // Log the pass after adding the barcode
-
-// Generate the pass and write it to a file
-pass.generate()
-    .then(pass => {
-        pass.writeFile('./pass.pkpass'); // Updated path to the output file
-        console.log('Pass generated and written to file:', pass); // Log the pass after it's generated and written to file
-    })
-    .catch(err => {
-        console.error('Error generating pass:', err); // Log any errors that occur during pass generation
-    });
+// Zip the pass package
+const output = fs.createWriteStream('./pass.pkpass.zip');
+const archive = archiver('zip');
+archive.pipe(output);
+archive.directory('./pass.pkpass/', false);
+archive.finalize();
