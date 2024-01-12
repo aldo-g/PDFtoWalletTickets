@@ -1,11 +1,17 @@
+# Use an official Node.js runtime as a parent image
 FROM node:14
 
+# Set the working directory in the container to /app
 WORKDIR /app
 
-COPY package*.json ./
+# Add the current directory contents into the container at /app
+ADD . /app
 
+# Install any needed packages specified in package.json
 RUN npm install
 
-COPY . .
+# Make port 80 available to the world outside this container
+EXPOSE 80
 
-CMD [ "node", "your-app-start-file.js" ]
+# Run test.js when the container launches
+CMD ["node", "test.js"]
