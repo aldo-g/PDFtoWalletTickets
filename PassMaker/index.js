@@ -20,7 +20,7 @@ fs.writeFileSync('./pass.pkpass/manifest.json', JSON.stringify(manifest));
 child_process.execSync('openssl smime -binary -sign -certfile certificates/wwdr.pem -signer certificates/certificate.pem -inkey certificates/key.pem -in ./pass.pkpass/manifest.json -out ./pass.pkpass/signature -outform DER -passin pass:Hello123');
 
 // Zip the pass package
-const output = fs.createWriteStream('./pass.pkpass.zip');
+const output = fs.createWriteStream('./wallet_pass/pass.pkpass');
 const archive = archiver('zip');
 archive.pipe(output);
 archive.directory('./pass.pkpass/', false);
