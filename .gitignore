@@ -4,3 +4,5 @@ PassMaker/certificates/*
 PassMaker/myPassModel/*
 PassMaker/pass.pkpass/*
 PassMaker/wallet_pass/*
+.DS_Store
+PassMaker/.DS_Store
