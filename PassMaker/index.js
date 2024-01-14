@@ -2,9 +2,27 @@ const fs = require('fs');
 const crypto = require('crypto');
 const child_process = require('child_process');
 const archiver = require('archiver');
+const path = require('path');
+
+// Read the QR code data from the file
+const qrCodeData = fs.readFileSync(path.join(__dirname, 'qr_codes', 'qr_data.txt'), 'utf8');
 
 // Read the pass.json file
-const passJson = fs.readFileSync('./pass.pkpass/pass.json', 'utf8');
+const passJsonPath = path.join(__dirname, 'pass.pkpass', 'pass.json');
+let passJsonData = fs.readFileSync(passJsonPath, 'utf8');
+
+// Parse the pass.json file
+let passJson = JSON.parse(passJsonData);
+
+// Add the barcode object to the pass.json file
+passJson.barcode = {
+    message: qrCodeData,
+    format: "PKBarcodeFormatQR",
+    messageEncoding: "iso-8859-1"
+};
+
+// Write the updated pass.json file back to disk
+fs.writeFileSync(passJsonPath, JSON.stringify(passJson, null, 4));
 
 // Generate the manifest.json file
 const manifest = {};
