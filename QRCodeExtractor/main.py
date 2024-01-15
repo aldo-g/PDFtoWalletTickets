@@ -31,9 +31,3 @@ for i in range(len(images)):
         if obj.type == 'QRCODE':
             qr_data = obj.data.decode('utf-8')
             break
-
-# Generate a new QR code image from the decoded data
-img = qrcode.make(qr_data)
-
-# Save the QR code image
-img.save('qr_codes/qr_code.png')
