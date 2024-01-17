@@ -1,8 +1,6 @@
 from pdf2image import convert_from_path
 from pyzbar.pyzbar import decode
-from PIL import Image
 from PyPDF2 import PdfReader
-import qrcode
 
 # Read the PDF file
 with open('pdfs/695372607187-8162482989-ticket_page1.pdf', 'rb') as file:
