@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/master.swiftdeps"
+  },
+  "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/wallet_maker.swift": {
+    "dependencies": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/wallet_maker.d",
+    "object": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/wallet_maker.swift.o",
+    "swiftmodule": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/wallet_maker~partial.swiftmodule",
+    "swift-dependencies": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/wallet_maker.swiftdeps"
+  }
+}

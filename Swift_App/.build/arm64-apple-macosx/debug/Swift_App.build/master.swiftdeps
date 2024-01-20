@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)"
+options: "70f0269193201909f8892728ca81feee"
+build_time: [1705755307, 70162000]
+inputs:
+  "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/wallet_maker.swift": !dirty [1705754516, 880702927]

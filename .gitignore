@@ -6,3 +6,5 @@ PassMaker/pass.pkpass/*
 PassMaker/wallet_pass/*
 .DS_Store
 PassMaker/.DS_Store
+Swift_App/pass.pkpass
+Swift_App/certificates

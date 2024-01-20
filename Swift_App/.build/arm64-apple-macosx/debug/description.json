@@ -1,0 +1,314 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Swift_App-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "importPath" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/wallet_maker.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.swiftmodule"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Swift_App",
+      "moduleOutputPath" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.swiftmodule",
+      "objects" : [
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/wallet_maker.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.15",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Minizip.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/minizip/include",
+        "-module-cache-path",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/Swift_App-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/wallet_maker.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/wallet_maker.swift"
+      ],
+      "tempsPath" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Zip-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "importPath" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/QuickZip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/Zip.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/ZipUtilities.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Minizip.build/ioapi.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Minizip.build/unzip.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Minizip.build/zip.c.o"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Zip",
+      "moduleOutputPath" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.swiftmodule",
+      "objects" : [
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/QuickZip.swift.o",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/Zip.swift.o",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/ZipUtilities.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Minizip.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/minizip/include",
+        "-module-cache-path",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/Zip-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-suppress-warnings"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/QuickZip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/Zip.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/ZipUtilities.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/QuickZip.swift",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/Zip.swift",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/ZipUtilities.swift"
+      ],
+      "tempsPath" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Swift_App" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Swift_App",
+      "-incremental",
+      "-c",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/wallet_maker.swift",
+      "-I",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug",
+      "-target",
+      "arm64-apple-macosx10.15",
+      "-swift-version",
+      "5",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-g",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Minizip.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/minizip/include",
+      "-module-cache-path",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/Swift_App-Swift.h",
+      "-color-diagnostics",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "Zip" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Zip",
+      "-incremental",
+      "-c",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/QuickZip.swift",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/Zip.swift",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/ZipUtilities.swift",
+      "-I",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-swift-version",
+      "5",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-g",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Minizip.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/minizip/include",
+      "-module-cache-path",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/Zip-Swift.h",
+      "-color-diagnostics",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-suppress-warnings",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Minizip" : [
+
+    ],
+    "Swift_App" : [
+      "Zip",
+      "Minizip"
+    ],
+    "Zip" : [
+      "Minizip"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  }
+}

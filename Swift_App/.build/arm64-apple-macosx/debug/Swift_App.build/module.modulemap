@@ -1,0 +1,4 @@
+module Swift_App {
+    header "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/Swift_App-Swift.h"
+    requires objc
+}

@@ -1,0 +1,4 @@
+module Minizip {
+    umbrella header "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/minizip/include/Minizip.h"
+    export *
+}

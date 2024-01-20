@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/master.swiftdeps"
+  },
+  "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/QuickZip.swift": {
+    "dependencies": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/QuickZip.d",
+    "object": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/QuickZip.swift.o",
+    "swiftmodule": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/QuickZip~partial.swiftmodule",
+    "swift-dependencies": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/QuickZip.swiftdeps"
+  },
+  "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/Zip.swift": {
+    "dependencies": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/Zip.d",
+    "object": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/Zip.swift.o",
+    "swiftmodule": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/Zip~partial.swiftmodule",
+    "swift-dependencies": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/Zip.swiftdeps"
+  },
+  "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/ZipUtilities.swift": {
+    "dependencies": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/ZipUtilities.d",
+    "object": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/ZipUtilities.swift.o",
+    "swiftmodule": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/ZipUtilities~partial.swiftmodule",
+    "swift-dependencies": "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/ZipUtilities.swiftdeps"
+  }
+}
