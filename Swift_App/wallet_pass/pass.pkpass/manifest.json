@@ -1,8 +1,7 @@
 {
   "background.png" : "fa67bfb0ad1ab7851ab0ad2157507eb054a3776c",
-  "pass.json" : "bd184fe381b63155d310e09fd829567c0acd68bd",
+  "icon.png" : "5702c6f32c2348a4c36278f91a1064ace242efa4",
+  "pass.json" : "a610230d23dc58b8c0fba36e0ba6d763bd2f5533",
   "thumbnail.png" : "5702c6f32c2348a4c36278f91a1064ace242efa4",
-  "manifest.json" : "58d2fdecf7dbb23b45811b73e480c0c28cfc50ad",
-  "logo.png" : "b39d5b1760d66fb2d2c2722ccaca49460458c8db",
-  "icon.png" : "5702c6f32c2348a4c36278f91a1064ace242efa4"
+  "logo.png" : "b39d5b1760d66fb2d2c2722ccaca49460458c8db"
 }

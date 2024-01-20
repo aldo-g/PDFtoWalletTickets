@@ -8,3 +8,4 @@ PassMaker/wallet_pass/*
 PassMaker/.DS_Store
 Swift_App/pass.pkpass
 Swift_App/certificates
+Swift_App/qr_codes

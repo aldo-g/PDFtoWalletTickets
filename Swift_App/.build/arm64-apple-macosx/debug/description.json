@@ -3,7 +3,90 @@
 
   ],
   "copyCommands" : {
-
+    "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/certificate.pem" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/certificates/certificate.pem"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/certificate.pem"
+        }
+      ]
+    },
+    "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/key.pem" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/certificates/key.pem"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/key.pem"
+        }
+      ]
+    },
+    "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/pass.pkpass" : {
+      "inputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/pass.pkpass"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/pass.pkpass"
+        }
+      ]
+    },
+    "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/qr_code.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/qr_codes/qr_code.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/qr_code.png"
+        }
+      ]
+    },
+    "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/qr_data.txt" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/qr_codes/qr_data.txt"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/qr_data.txt"
+        }
+      ]
+    },
+    "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/wwdr.pem" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/certificates/wwdr.pem"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App_Swift_App.bundle/wwdr.pem"
+        }
+      ]
+    }
   },
   "explicitTargetDependencyImportCheckingMode" : {
     "none" : {
@@ -23,22 +106,31 @@
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/wallet_maker.swift"
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<Swift_App-debug.module-resources>"
         },
         {
           "kind" : "file",
           "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.swiftmodule"
         }
       ],
-      "isLibrary" : true,
+      "isLibrary" : false,
       "moduleName" : "Swift_App",
-      "moduleOutputPath" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.swiftmodule",
+      "moduleOutputPath" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/Swift_App.swiftmodule",
       "objects" : [
-        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/wallet_maker.swift.o"
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/main.swift.o",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/resource_bundle_accessor.swift.o"
       ],
       "otherArguments" : [
         "-target",
-        "arm64-apple-macosx10.15",
+        "arm64-apple-macosx10.13",
         "-swift-version",
         "5",
         "-enable-batch-mode",
@@ -59,10 +151,6 @@
         "-module-cache-path",
         "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
-        "-parse-as-library",
-        "-emit-objc-header",
-        "-emit-objc-header-path",
-        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/Swift_App-Swift.h",
         "-color-diagnostics",
         "-sdk",
         "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
@@ -76,15 +164,20 @@
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/wallet_maker.swift.o"
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/main.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.swiftmodule"
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/Swift_App.swiftmodule"
         }
       ],
       "sources" : [
-        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/wallet_maker.swift"
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/main.swift",
+        "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/DerivedSources/resource_bundle_accessor.swift"
       ],
       "tempsPath" : "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build",
       "wholeModuleOptimization" : false
@@ -201,11 +294,12 @@
       "Swift_App",
       "-incremental",
       "-c",
-      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/wallet_maker.swift",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/main.swift",
+      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/DerivedSources/resource_bundle_accessor.swift",
       "-I",
       "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug",
       "-target",
-      "arm64-apple-macosx10.15",
+      "arm64-apple-macosx10.13",
       "-swift-version",
       "5",
       "-enable-batch-mode",
@@ -226,10 +320,6 @@
       "-module-cache-path",
       "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
-      "-parse-as-library",
-      "-emit-objc-header",
-      "-emit-objc-header-path",
-      "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Swift_App.build/Swift_App-Swift.h",
       "-color-diagnostics",
       "-sdk",
       "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",

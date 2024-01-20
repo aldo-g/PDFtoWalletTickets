@@ -1,9 +1,5 @@
 {
-  "barcode" : {
-    "format" : "PKBarcodeFormatQR",
-    "messageEncoding" : "iso-8859-1",
-    "message" : "816248298913404264539001"
-  },
+  "logoText" : "",
   "generic" : {
     "primaryFields" : [
       {
@@ -13,13 +9,17 @@
       }
     ]
   },
-  "serialNumber" : "A1B2C3D4E5",
-  "description" : "FUTRXPO Day Pass",
+  "passTypeIdentifier" : "pass.com.aldo.passmaker",
   "foregroundColor" : "rgb(255, 255, 255)",
   "backgroundColor" : "rgb(0, 153, 204)",
-  "passTypeIdentifier" : "pass.com.aldo.passmaker",
+  "organizationName" : "FUTRXPO",
+  "description" : "FUTRXPO Day Pass",
+  "barcode" : {
+    "format" : "PKBarcodeFormatQR",
+    "messageEncoding" : "iso-8859-1",
+    "message" : "816248298913404264539001"
+  },
   "formatVersion" : 1,
-  "teamIdentifier" : "FT497LW97Z",
-  "logoText" : "",
-  "organizationName" : "FUTRXPO"
+  "serialNumber" : "A1B2C3D4E5",
+  "teamIdentifier" : "FT497LW97Z"
 }
