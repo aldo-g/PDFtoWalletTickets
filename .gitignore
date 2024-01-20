@@ -9,3 +9,11 @@ PassMaker/.DS_Store
 Swift_App/pass.pkpass
 Swift_App/certificates
 Swift_App/qr_codes
+Swift_App/.build/
+Swift_App/*.xcodeproj
+Swift_App/*.xcworkspace
+Swift_App/*.playground/
+Swift_App/Carthage/
+Swift_App/DerivedData/
+Swift_App/*.moved-aside
+Swift_App/*.xcuserstate
