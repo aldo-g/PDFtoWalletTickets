@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)"
-options: "7b0bd16e41d99c1354313f0b5c93bb72"
-build_time: [1705755283, 299515000]
-inputs:
-  "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/QuickZip.swift": [1705754827, 281561514]
-  "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/Zip.swift": [1705754827, 281722221]
-  "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/checkouts/Zip/Zip/ZipUtilities.swift": [1705754827, 281825844]

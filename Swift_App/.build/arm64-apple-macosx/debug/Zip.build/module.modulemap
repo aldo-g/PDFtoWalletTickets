@@ -1,4 +1,0 @@
-module Zip {
-    header "/Users/alastairgrant/Personal/Code_Projects/PDFtoWalletTickets/Swift_App/.build/arm64-apple-macosx/debug/Zip.build/Zip-Swift.h"
-    requires objc
-}
