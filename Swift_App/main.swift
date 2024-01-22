@@ -119,7 +119,59 @@ func unzipPassPackage() throws {
     if process.terminationStatus != 0 {
         throw NSError(domain: "Unzip", code: Int(process.terminationStatus), userInfo: [NSLocalizedDescriptionKey: "The unzip command failed. Check your zip file and destination directory."])
     }
-    print("Unzipping pass package is complete.")
+    let fileManager = FileManager.default
+    let currentDirectoryPath = fileManager.currentDirectoryPath
+    let unzippedPackagePath = currentDirectoryPath + "/unzipped"
+    print("Unzipping pass package is complete. The unzipped package is located at \(unzippedPackagePath).")
+
+    // List the contents of the unzipped directory
+    let lsProcess = Process()
+    lsProcess.launchPath = "/bin/sh"
+    lsProcess.arguments = ["-c", "ls \(unzippedPackagePath)"]
+    let lsPipe = Pipe()
+    lsProcess.standardOutput = lsPipe
+    lsProcess.standardError = lsPipe
+    lsProcess.launch()
+    lsProcess.waitUntilExit()
+
+    let data = lsPipe.fileHandleForReading.readDataToEndOfFile()
+    let output = String(data: data, encoding: .utf8)
+    print("Contents of the unzipped directory:\n\(output ?? "No output")")
+}
+
+func verifyCertificateFile() throws {
+    let fileManager = FileManager.default
+    let certificatePath = "certificates/certificate.pem"
+
+    // Check if the file exists
+    guard fileManager.fileExists(atPath: certificatePath) else {
+        throw NSError(domain: "FileError", code: 1, userInfo: [NSLocalizedDescriptionKey: "The certificate file does not exist."])
+    }
+
+    // Check if the file is readable
+    guard fileManager.isReadableFile(atPath: certificatePath) else {
+        throw NSError(domain: "FileError", code: 2, userInfo: [NSLocalizedDescriptionKey: "The certificate file is not accessible."])
+    }
+
+    print("The certificate file exists and is accessible.")
+}
+
+func verifyManifestAndSignatureFiles() throws {
+    let fileManager = FileManager.default
+    let manifestPath = "Swift_App/unzipped/pre.pkpass/manifest.json"
+    let signaturePath = "Swift_App/unzipped/pre.pkpass/signature"
+
+    // Check if the manifest.json file exists and is readable
+    guard fileManager.fileExists(atPath: manifestPath), fileManager.isReadableFile(atPath: manifestPath) else {
+        throw NSError(domain: "FileError", code: 1, userInfo: [NSLocalizedDescriptionKey: "The manifest.json file does not exist or is not accessible."])
+    }
+
+    // Check if the signature file exists and is readable
+    guard fileManager.fileExists(atPath: signaturePath), fileManager.isReadableFile(atPath: signaturePath) else {
+        throw NSError(domain: "FileError", code: 2, userInfo: [NSLocalizedDescriptionKey: "The signature file does not exist or is not accessible."])
+    }
+
+    print("The manifest.json and signature files exist and are accessible.")
 }
 
 func verifyUnzippedManifest() throws {
@@ -157,6 +209,8 @@ func main() throws {
     try createWalletPassDirectory() 
     try zipPassPackage()
     try unzipPassPackage()
+    try verifyCertificateFile()
+    try verifyManifestAndSignatureFiles()
     try verifyUnzippedManifest()
     print("Main function execution is complete.")
 }
