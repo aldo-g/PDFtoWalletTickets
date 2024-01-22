@@ -16,7 +16,6 @@ let package = Package(
                 .process("certificates/certificate.pem"),
                 .process("pass.pkpass"),
                 .process("qr_codes/qr_data.txt"),
-                .process("qr_codes/qr_code.png"),
                 .process("certificates/key.pem"),
                 .process("certificates/wwdr.pem")
             ]
