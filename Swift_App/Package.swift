@@ -14,11 +14,12 @@ let package = Package(
             sources: ["main.swift"],
             resources: [
                 .process("certificates/certificate.pem"),
-                .process("pass.pkpass"),
+                .process("pre.pkpass"),
                 .process("qr_codes/qr_data.txt"),
                 .process("certificates/key.pem"),
-                .process("certificates/wwdr.pem")
+                .process("certificates/wwdr.pem"),
+                .process("wallet_pass/pass.pkpass")
             ]
-        ),
+        )
     ]
 )
