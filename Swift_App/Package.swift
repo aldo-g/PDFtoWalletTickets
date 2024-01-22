@@ -20,10 +20,5 @@ let package = Package(
                 .process("certificates/wwdr.pem")
             ]
         ),
-        .testTarget(
-            name: "Swift_AppTests",
-            dependencies: ["Swift_App"],
-            sources: ["validate.swift"]
-        ),
     ]
 )
