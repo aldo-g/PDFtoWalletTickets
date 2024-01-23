@@ -158,8 +158,8 @@ func verifyCertificateFile() throws {
 
 func verifyManifestAndSignatureFiles() throws {
     let fileManager = FileManager.default
-    let manifestPath = "Swift_App/unzipped/pre.pkpass/manifest.json"
-    let signaturePath = "Swift_App/unzipped/pre.pkpass/signature"
+    let manifestPath = "unzipped/pre.pkpass/manifest.json"
+    let signaturePath = "unzipped/pre.pkpass/signature"
 
     // Check if the manifest.json file exists and is readable
     guard fileManager.fileExists(atPath: manifestPath), fileManager.isReadableFile(atPath: manifestPath) else {
@@ -176,17 +176,26 @@ func verifyManifestAndSignatureFiles() throws {
 
 func verifyUnzippedManifest() throws {
     let certificatePath = "certificates/certificate.pem"
-    let manifestPath = "unzipped/pass.pkpass/manifest.json"
-    let signaturePath = "unzipped/pass.pkpass/signature"
+    let manifestPath = "unzipped/pre.pkpass/manifest.json"
+    let signaturePath = "unzipped/pre.pkpass/signature"
     let opensslCommand = "openssl smime -verify -in \(signaturePath) -inform DER -content \(manifestPath) -CAfile \(certificatePath)"
     let process = Process()
     process.launchPath = "/bin/sh"
     process.arguments = ["-c", opensslCommand]
-    let pipe = Pipe()
-    process.standardOutput = pipe
-    process.standardError = pipe
+    let outPipe = Pipe()
+    let errPipe = Pipe()
+    process.standardOutput = outPipe
+    process.standardError = errPipe
     process.launch()
     process.waitUntilExit()
+
+    let outData = outPipe.fileHandleForReading.readDataToEndOfFile()
+    let outPrint = String(data: outData, encoding: .utf8)
+    let errData = errPipe.fileHandleForReading.readDataToEndOfFile()
+    let errPrint = String(data: errData, encoding: .utf8)
+    print("Standard Output: \(outPrint ?? "")")
+    print("Standard Error: \(errPrint ?? "")")
+
     if process.terminationStatus != 0 {
         throw NSError(domain: "OpenSSL", code: Int(process.terminationStatus), userInfo: [NSLocalizedDescriptionKey: "The OpenSSL command failed. Check your certificate."])
     }
