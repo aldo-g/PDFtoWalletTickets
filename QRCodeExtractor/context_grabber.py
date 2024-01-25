@@ -1,6 +1,6 @@
 import openai
 import PyPDF2
-
+# used to extract text from PDF files and understand context. 
 # Open the PDF file
 with open('event.pdf', 'rb') as file:
     reader = PyPDF2.PdfFileReader(file)
